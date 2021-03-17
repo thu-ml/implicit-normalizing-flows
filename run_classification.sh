@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 python train_classification.py --data 'cifar100' --model-dir 'experiments/classify_cifar100_Resnet18_c0.9' \
+ --weight-decay 0 --epochs 150 --log-interval 20 --batch-size 128 --test-batch-size 128 --lr 0.001 --coeff 0.9

@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0 python train_toy.py --nblocks 6 --vnorms '2222' --dims '128-128' \
+    --arch 'implicit' --brute-force True --save 'experiments/res_toy(block6,128*2,c99,sin,5000)' --act 'sin' --data 'checkerboard' --batch_size 5000 --coeff 0.99 --n-lipschitz-iters 20
