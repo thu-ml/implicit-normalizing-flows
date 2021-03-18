@@ -1,6 +1,6 @@
-# Implicit Normalizing Flows (ICLR 2021 Spotlight)[[arxiv](https://openreview.net/forum?id=8PS8m9oYtNy)]
+# Implicit Normalizing Flows (ICLR 2021 Spotlight)[[arxiv](https://arxiv.org/abs/2103.09527)]
 
-This repository contains Pytorch implementation of experiments from the paper [Implicit Normalizing Flows](https://openreview.net/forum?id=8PS8m9oYtNy). The implementation is based on [Residual Flows](https://github.com/rtqichen/residual-flows).
+This repository contains Pytorch implementation of experiments from the paper [Implicit Normalizing Flows](https://arxiv.org/abs/2103.09527). The implementation is based on [Residual Flows](https://github.com/rtqichen/residual-flows).
 
 <p align="center">
 <img align="middle" src="./assets/theory.png" />
