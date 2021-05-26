@@ -246,7 +246,7 @@ class imBlock(nn.Module):
         """Returns logdet|dz/dx|."""
 
         with torch.enable_grad():
-            if (self.brute_force or not self.training) and (x.ndimension() == 2 and x.shape[1] <= 10)
+            if (self.brute_force or not self.training) and (x.ndimension() == 2 and x.shape[1] <= 10):
                 x = x.requires_grad_(True)
                 z = z.requires_grad_(True)
                 Fx = x + self.nnet_x(x)

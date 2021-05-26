@@ -265,7 +265,6 @@ if __name__ == '__main__':
         logger.info('Resuming model from {}'.format(args.resume))
         with torch.no_grad():
             x = toy_data.inf_train_gen(args.data, batch_size=args.batch_size)
-            x = x if args.task == 'density' else x[0]
             x = torch.from_numpy(x).type(torch.float32).to(device)
             model(x, restore=True)
         checkpt = torch.load(args.resume)
@@ -278,7 +277,6 @@ if __name__ == '__main__':
     else:
         with torch.no_grad():
             x = toy_data.inf_train_gen(args.data, batch_size=args.batch_size)
-            x = x if args.task == 'density' else x[0]
             x = torch.from_numpy(x).type(torch.float32).to(device)
             model(x, restore=True)
 
